@@ -21,4 +21,5 @@ COPY --from=build /app/skills ./skills
 ENV NODE_ENV=production
 EXPOSE 8080
 
+RUN npm link
 CMD ["node", "dist/main.js"]
